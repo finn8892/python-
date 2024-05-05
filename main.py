@@ -1,16 +1,25 @@
+score = 0
 
-print("hi")
-#ask the user their name
-name = input("whats your name ")
+# Ask the user their name
+name = input("Hello, what is your name? ")
 
-#welcome to the quiz
-print ("this quiz is a stupid quiz",name)
+# Welcome to the quiz
+print ("This quiz is a stupid quiz",name)
 
-#question/answers
-input ("are you stupid ")
-print("yes you are")
+# Question/Answers
+answer1=input("Are you stupid? ")
 
+if answer1.lower() == "yes":
+ print("Correct!")
+ score =+10000
 
+else:
+ print("Incorrect!")
+ print("answer is yes")
+ score =-10000
 
-#thanks for playing
-print("thanks for playing")
+print("Your final score is", score)
+
+# Thanks for playing
+print("Thanks for playing")
+
