@@ -9,7 +9,7 @@ print ("This quiz is a stupid quiz",name)
 # Question/Answers
 answer1=input("Are you stupid? ")
 
-if answer1.lower() == "yes":
+if answer1=="yes" or answer1 == "yup":
  print("Correct!")
  score =+10000
 
@@ -18,8 +18,23 @@ else:
  print("answer is yes")
  score =-10000
 
-print("Your final score is", score)
+#question2
+question2=input("who has the most albums")
+a="drake"
+b="kanye west"
+c="kendrick lamar"
+d="yuno miles"
+answer2=input("{}/nA.{}B.{}C.{}D.{}}"format(question2,a,b,c,d)).lower()
+
+if answer2 == b or answer2== "b":
+ print("correct")
+ score+=10000
+
+else:
+ print("incorrect")
+score=-100000
+
 
 # Thanks for playing
-print("Thanks for playing")
+print("good job{}.you have completed the quiz. your final score was{}".format(name,score))
 
