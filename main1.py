@@ -1,9 +1,11 @@
 play = "yes"
 QUESTION_FORMAT = "{}`\n A. {}\n B. {}\n C. {}\n D. {}\n Answer here: "
 
+# Ask the user their name 
+name = input("Whats your name? ")
+
 
 # Greet and introduce the user to the quiz  
-name = input("Whats your name? ")
 print("Welcome to my quiz {}".format(name))
 print("This is a general knwoledge quiz.")
 
@@ -39,4 +41,5 @@ while play == "yes":
         else:
             print("Incorrect. The anser was {}.".format(q1b))
         question_attempts1 -= 1
+    
     
