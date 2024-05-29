@@ -53,10 +53,12 @@ while play == "yes":
                 print(random.choice(BAD_COMMENTS))
             else:
                 print("That wasn't an option.")
-
-
-                question_attempts -= 1
+                
+                
+            question_attempts -= 1
+            print("The answer is ")
             
+
     #end of quiz
     print("Well done {}. You completed the quiz. Your final score was {}".format(name,score))
 
